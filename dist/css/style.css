@@ -1,0 +1,286 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap"); /* Headings */
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300..800&display=swap"); /* Body */
+/* Pink  */
+/* Light Pink  */
+/* Light Red */
+/* Very Dark Cyan  */
+/* Very Pale Blue  */
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-family: "Open Sans";
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  min-height: 100vh;
+}
+
+.try-btn {
+  color: hsl(322, 100%, 66%);
+  border: 1.1px solid hsl(322, 100%, 66%);
+  width: 8rem;
+  cursor: pointer;
+}
+.try-btn:focus, .try-btn:visited, .try-btn:active {
+  color: hsl(322, 100%, 66%);
+  border-color: hsl(322, 100%, 66%);
+}
+.try-btn:hover {
+  color: hsl(321, 100%, 78%);
+  border-color: hsl(321, 100%, 78%);
+}
+
+.intro {
+  margin: 12rem auto 2rem;
+  max-width: 90%;
+}
+.intro h1 {
+  color: hsl(192, 100%, 9%);
+  font-family: "Poppins";
+  font-weight: 700;
+  margin-bottom: 1.77rem;
+  line-height: 1.4;
+}
+.intro p {
+  color: hsl(192, 100%, 9%);
+  font-family: "Open Sans";
+  font-weight: 400;
+  font-size: 1.1rem;
+  width: 34rem;
+  margin: auto;
+}
+.intro .intro-img {
+  margin-bottom: 6.7rem;
+}
+
+.get-started {
+  width: 22rem;
+  outline: none;
+  background-color: hsl(322, 100%, 66%);
+  color: hsl(210, 100%, 98%);
+  font-family: "Open Sans";
+  font-weight: 400;
+  font-size: 1.1rem;
+  margin-top: 2.5rem;
+  margin-bottom: 4rem;
+  cursor: pointer;
+}
+.get-started:focus {
+  background-color: hsl(322, 100%, 66%);
+  color: hsl(210, 100%, 98%);
+}
+.get-started:hover {
+  background-color: hsl(321, 100%, 78%);
+  color: hsl(210, 100%, 98%);
+}
+
+.numbers {
+  max-width: 95%;
+  margin: auto;
+}
+.numbers .messages,
+.numbers .communities {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+.numbers .messages h2,
+.numbers .communities h2 {
+  font-size: 3.8rem;
+  color: hsl(192, 100%, 9%);
+  font-family: "Poppins";
+  font-weight: 700;
+}
+.numbers .messages p,
+.numbers .communities p {
+  color: hsla(192, 100%, 9%, 0.5);
+  font-family: "Open Sans";
+  font-weight: 400;
+  font-size: 1rem;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+.numbers .messages img,
+.numbers .communities img {
+  width: 32px;
+  margin-left: -8rem;
+  margin-bottom: 0.6;
+}
+
+#privileges {
+  margin-top: 3rem;
+  text-align: center;
+}
+#privileges h2 {
+  color: hsl(192, 100%, 9%);
+  font-size: 2.3rem;
+  font-family: "Poppins";
+  font-weight: 700;
+}
+
+.privileges-grid {
+  max-width: 90%;
+  margin: auto;
+}
+.privileges-grid .row:nth-child(1) {
+  border: 2px solid green;
+  background-image: url(../../images/bg-section-top-desktop-1.svg), url(../../images/bg-section-bottom-desktop-1.svg);
+  background-repeat: no-repeat;
+  background-position-x: center center;
+  background-position-y: top bottom;
+  background-size: 100% 120%;
+}
+
+.col-12 {
+  padding: 1rem;
+}
+
+.priv-description {
+  margin-top: 40%;
+}
+.priv-description h3 {
+  color: hsl(192, 100%, 9%);
+  font-size: 1.88rem;
+  font-family: "Poppins";
+  font-weight: 700;
+  margin-bottom: 1.25rem;
+}
+.priv-description p {
+  color: hsl(192, 100%, 9%);
+  font-size: 1.1rem;
+  font-family: "Open Sans";
+  font-weight: 400;
+}
+
+footer {
+  background-color: hsl(192, 100%, 9%);
+  margin-top: 16rem;
+}
+footer .col-12 {
+  padding: 2rem;
+}
+footer .navbar-brand img {
+  -webkit-filter: invert(97%) sepia(57%) saturate(3265%) hue-rotate(179deg) brightness(108%) contrast(113%);
+          filter: invert(97%) sepia(57%) saturate(3265%) hue-rotate(179deg) brightness(108%) contrast(113%);
+}
+footer .wave {
+  width: 100%;
+  position: absolute;
+  bottom: 100%;
+}
+footer aside {
+  color: hsl(210, 100%, 98%);
+  font-family: "Open Sans";
+  font-weight: 400;
+}
+footer .subscribe-content {
+  color: hsl(210, 100%, 98%);
+  font-size: 1rem;
+}
+footer .subscribe-content h3 {
+  font-family: "Poppins";
+  font-weight: 600;
+}
+footer .subscribe-content p {
+  font-family: "Open Sans";
+  font-weight: 400;
+}
+
+.input-group .email-input {
+  width: 60%;
+}
+.input-group input {
+  width: 20rem;
+  border: 2px solid hsl(192, 100%, 9%);
+}
+.input-group button {
+  color: hsl(210, 100%, 98%);
+  background-color: hsl(322, 100%, 66%);
+  width: 8rem;
+}
+.input-group button:hover {
+  color: hsl(210, 100%, 98%);
+  background-color: hsl(321, 100%, 78%);
+}
+
+.social-links img {
+  width: 25px;
+  -webkit-filter: invert(92%) sepia(5%) saturate(1898%) hue-rotate(192deg) brightness(108%) contrast(101%);
+          filter: invert(92%) sepia(5%) saturate(1898%) hue-rotate(192deg) brightness(108%) contrast(101%);
+  cursor: pointer;
+}
+.social-links .facebook:hover {
+  -webkit-filter: invert(41%) sepia(46%) saturate(6771%) hue-rotate(203deg) brightness(100%) contrast(90%);
+          filter: invert(41%) sepia(46%) saturate(6771%) hue-rotate(203deg) brightness(100%) contrast(90%);
+}
+.social-links .instagram:hover {
+  -webkit-filter: invert(30%) sepia(48%) saturate(1712%) hue-rotate(288deg) brightness(97%) contrast(97%);
+          filter: invert(30%) sepia(48%) saturate(1712%) hue-rotate(288deg) brightness(97%) contrast(97%);
+}
+.social-links .twitter:hover {
+  -webkit-filter: invert(49%) sepia(53%) saturate(2149%) hue-rotate(176deg) brightness(100%) contrast(91%);
+          filter: invert(49%) sepia(53%) saturate(2149%) hue-rotate(176deg) brightness(100%) contrast(91%);
+}
+
+@media screen and (width <= 992px) {
+  .numbers .messages,
+  .numbers .communities {
+    width: 100%;
+    padding: 2rem;
+  }
+  .priv-description {
+    margin-top: 20%;
+  }
+  .input-group .email-input, .input-group .subscribe-btn {
+    width: 100%;
+  }
+  .input-group button {
+    margin-top: 1rem;
+    float: right;
+  }
+}
+@media screen and (width <= 768px) {
+  .intro {
+    margin-top: 7rem;
+  }
+  .intro p {
+    width: auto;
+  }
+  .get-started {
+    width: 20rem;
+  }
+  .priv-description {
+    margin-top: auto;
+  }
+}
+@media screen and (width <= 600px) {
+  .navbar-brand img {
+    width: 150px;
+  }
+  .get-started {
+    width: 16rem;
+  }
+  .numbers .messages h2,
+  .numbers .communities h2 {
+    font-size: 2.8rem;
+  }
+  .numbers .messages img,
+  .numbers .communities img {
+    width: 30px;
+  }
+}/*# sourceMappingURL=style.css.map */
