@@ -1,0 +1,374 @@
+//Fonts
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap"); /* Headings */
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300..800&display=swap"); /* Body */
+
+//Font-family
+$poppins: "Poppins";
+$sans: "Open Sans";
+
+//Font Weights
+$weight: (
+  "Regular": 400,
+  "Semibold": 600,
+  "Bold": 700,
+);
+
+//Colors
+
+//? Primary
+$primary-1: hsl(322, 100%, 66%); /* Pink  */
+$primary-2: hsl(321, 100%, 78%); /* Light Pink  */
+$primary-3: hsl(0, 100%, 63%); /* Light Red */
+
+//?Neutral
+$neutral-1: hsl(192, 100%, 9%); /* Very Dark Cyan  */
+$neutral-2: hsl(210, 100%, 98%); /* Very Pale Blue  */
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: $sans;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh;
+}
+
+//Header
+header{
+  margin-bottom: 8rem ;
+}
+.try-btn {
+  color: $primary-1;
+  border: 1.1px solid $primary-1;
+  width: 8rem;
+  cursor: pointer;
+  &:focus,
+  &:visited,
+  &:active {
+    color: $primary-1;
+    border-color: $primary-1;
+  }
+  &:hover {
+    color: $primary-2;
+    border-color: $primary-2;
+  }
+}
+.intro {
+  margin: 12rem auto 2rem;
+  max-width: 90%;
+  h1 {
+    color: $neutral-1;
+    font-family: $poppins;
+    font-weight: map-get($map: $weight, $key: "Bold");
+    margin-bottom: 1.77rem;
+    line-height: 1.4;
+  }
+  p {
+    color: $neutral-1;
+    font-family: $sans;
+    font-weight: map-get($map: $weight, $key: "Regular");
+    font-size: 1.1rem;
+    width: 34rem;
+    margin: auto;
+  }
+
+  .intro-img {
+    margin-bottom: 6.7rem;
+  }
+}
+.get-started {
+  width: 22rem;
+  outline: none;
+  background-color: $primary-1;
+  color: $neutral-2;
+  font-family: $sans;
+  font-weight: map-get($map: $weight, $key: "Regular");
+  font-size: 1.1rem;
+  margin-top: 2.5rem;
+  margin-bottom: 4rem;
+  cursor: pointer;
+  &:focus {
+    background-color: $primary-1;
+    color: $neutral-2;
+  }
+  &:hover {
+    background-color: $primary-2;
+    color: $neutral-2;
+  }
+}
+.numbers {
+  max-width: 95%;
+  margin:auto;
+  .messages,
+  .communities {
+    flex: 1;
+    h2 {
+      font-size: 3.8rem;
+      color: $neutral-1;
+      font-family: $poppins;
+      font-weight: map-get($map: $weight, $key: "Bold");
+    }
+    p {
+      color: hsl(192, 100%, 9%, 0.5);
+      font-family: $sans;
+      font-weight: map-get($map: $weight, $key: "Regular");
+      font-size: 1rem;
+      width: fit-content;
+    }
+    img {
+      width: 32px;
+      margin-left: -8rem;
+      margin-bottom: 0.6;
+    }
+  }
+}
+//privileges section
+#privileges {
+  margin-bottom: 3rem;
+  text-align: center;
+}
+.privileges-grid {
+  max-width: 100%;
+ 
+ .top-wave1,.bottom-wave1,.top-wave2,.bottom-wave2{
+  left:0;
+  }
+ .top-wave1{
+  top:-10rem;
+ }
+ .bottom-wave1{
+  top:35%;
+  transform: translateY(-35%);
+  z-index: -1;
+ }
+ .top-wave2{
+  top:61%;
+  z-index: -1;
+  
+ }
+ .bottom-wave2{
+  bottom: -8rem;
+  
+ }
+}
+.col-12 {
+  padding: 1rem;
+}
+.priv-description {
+  margin-top: 40%;
+
+  h3 {
+    color: $neutral-1;
+    font-size: 1.88rem;
+    font-family: $poppins;
+    font-weight: map-get($map: $weight, $key: "Bold");
+    margin-bottom: 1.25rem;
+  }
+  p {
+    color: $neutral-1;
+    font-size: 1.1rem;
+    font-family: $sans;
+    font-weight: map-get($map: $weight, $key: "Regular");
+  }
+  
+}
+.section-bottom {
+  margin-top: 10rem;
+
+  h2 {
+    color: $neutral-1;
+    font-size: 2.3rem;
+    font-family: $poppins;
+    font-weight: map-get($map: $weight, $key: "Bold");
+    margin-top: 2rem;
+  }
+}
+//Footer
+footer {
+  .col-12 {
+    padding: 2rem;
+  }
+  .navbar-brand {
+    img {
+      filter: invert(97%) sepia(57%) saturate(3265%) hue-rotate(179deg)
+        brightness(108%) contrast(113%);
+    }
+  }
+  background-color: $neutral-1;
+  margin-top: 16rem;
+  .wave {
+    width: 100%;
+    position: absolute;
+    bottom: 100%;
+  }
+  aside {
+    color: $neutral-2;
+    font-family: $sans;
+    font-weight: map-get($map: $weight, $key: "Regular");
+  }
+  .subscribe-content {
+    color: $neutral-2;
+    font-size: 1rem;
+    h3 {
+      font-family: $poppins;
+      font-weight: map-get($map: $weight, $key: "Semibold");
+    }
+    p {
+      font-family: $sans;
+      font-weight: map-get($map: $weight, $key: "Regular");
+    }
+  }
+}
+.input-group {
+  .email-input {
+    width: 60%;
+  }
+  input {
+    width: 20rem;
+    border: 2px solid $neutral-1;
+  }
+  button {
+    color: $neutral-2;
+    background-color: $primary-1;
+
+    width: 8rem;
+    &:hover {
+      color: $neutral-2;
+      background-color: $primary-2;
+    }
+  }
+}
+.social-links {
+  img {
+    width: 25px;
+    filter: invert(92%) sepia(5%) saturate(1898%) hue-rotate(192deg)
+      brightness(108%) contrast(101%);
+    cursor: pointer;
+  }
+  .facebook:hover {
+    filter: invert(41%) sepia(46%) saturate(6771%) hue-rotate(203deg)
+      brightness(100%) contrast(90%);
+  }
+  .instagram:hover {
+    filter: invert(30%) sepia(48%) saturate(1712%) hue-rotate(288deg)
+      brightness(97%) contrast(97%);
+  }
+  .twitter:hover {
+    filter: invert(49%) sepia(53%) saturate(2149%) hue-rotate(176deg)
+      brightness(100%) contrast(91%);
+  }
+}
+//Media Queries
+@media screen and (992px <= width <= 1200px) {
+}
+@media screen and (width<=992px) {
+  .numbers {
+    .messages,
+    .communities {
+      width: 100%;
+      padding: 2rem;
+    }
+  }
+  .priv-description {
+    margin-top: 20%;
+  }
+  .input-group {
+    .email-input,
+    .subscribe-btn {
+      width: 100%;
+    }
+    button {
+      margin-top: 1rem;
+      float: right;
+    }
+  }
+  .privileges-grid {
+    
+     .top-wave1{
+      top:-5rem;
+     }
+    }
+}
+
+@media screen and (width<=768px) {
+  header{
+    margin-bottom: auto ;
+  }
+  .intro {
+    margin-top: 7rem;
+    p {
+      width: auto;
+    }
+  }
+  .get-started {
+    width: 20rem;
+  }
+  .privileges-grid {
+    .bottom-wave1{
+      transform: translateY(-45%);
+     }
+     .top-wave1{
+      top:-11rem;
+      
+     }
+     .bottom-wave2{
+      bottom: -10rem;
+      
+
+     }
+  }
+  .priv-description {
+    margin-top: auto;
+  }
+  
+}
+
+@media screen and (width<=600px) {
+  .navbar-brand {
+    img {
+      width: 150px;
+    }
+  }
+
+  .get-started {
+    width: 16rem;
+  }
+
+  .numbers {
+    .messages,
+    .communities {
+      h2 {
+        font-size: 2.8rem;
+      }
+
+      img {
+        width: 30px;
+      }
+    }
+  }
+  .privileges-grid {
+    .top-wave1{
+      top:-7rem;
+    }
+    .bottom-wave1{
+     
+      top:34%;
+    }
+      .top-wave2{
+        top:64%;
+        
+       }
+       .bottom-wave2{
+        bottom: -6rem;
+        
+       }
+    }
+  }
+
