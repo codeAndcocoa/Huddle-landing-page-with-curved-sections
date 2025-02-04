@@ -29,6 +29,10 @@ body {
   min-height: 100vh;
 }
 
+header {
+  margin-bottom: 8rem;
+}
+
 .try-btn {
   color: hsl(322, 100%, 66%);
   border: 1.1px solid hsl(322, 100%, 66%);
@@ -123,27 +127,31 @@ body {
 }
 
 #privileges {
-  margin-top: 3rem;
+  margin-bottom: 3rem;
   text-align: center;
-}
-#privileges h2 {
-  color: hsl(192, 100%, 9%);
-  font-size: 2.3rem;
-  font-family: "Poppins";
-  font-weight: 700;
 }
 
 .privileges-grid {
-  max-width: 90%;
-  margin: auto;
+  max-width: 100%;
 }
-.privileges-grid .row:nth-child(1) {
-  border: 2px solid green;
-  background-image: url(../../images/bg-section-top-desktop-1.svg), url(../../images/bg-section-bottom-desktop-1.svg);
-  background-repeat: no-repeat;
-  background-position-x: center center;
-  background-position-y: top bottom;
-  background-size: 100% 120%;
+.privileges-grid .top-wave1, .privileges-grid .bottom-wave1, .privileges-grid .top-wave2, .privileges-grid .bottom-wave2 {
+  left: 0;
+}
+.privileges-grid .top-wave1 {
+  top: -10rem;
+}
+.privileges-grid .bottom-wave1 {
+  top: 35%;
+  -webkit-transform: translateY(-35%);
+          transform: translateY(-35%);
+  z-index: -1;
+}
+.privileges-grid .top-wave2 {
+  top: 61%;
+  z-index: -1;
+}
+.privileges-grid .bottom-wave2 {
+  bottom: -8rem;
 }
 
 .col-12 {
@@ -165,6 +173,17 @@ body {
   font-size: 1.1rem;
   font-family: "Open Sans";
   font-weight: 400;
+}
+
+.section-bottom {
+  margin-top: 10rem;
+}
+.section-bottom h2 {
+  color: hsl(192, 100%, 9%);
+  font-size: 2.3rem;
+  font-family: "Poppins";
+  font-weight: 700;
+  margin-top: 2rem;
 }
 
 footer {
@@ -246,15 +265,22 @@ footer .subscribe-content p {
   .priv-description {
     margin-top: 20%;
   }
-  .input-group .email-input, .input-group .subscribe-btn {
+  .input-group .email-input,
+  .input-group .subscribe-btn {
     width: 100%;
   }
   .input-group button {
     margin-top: 1rem;
     float: right;
   }
+  .privileges-grid .top-wave1 {
+    top: -5rem;
+  }
 }
 @media screen and (width <= 768px) {
+  header {
+    margin-bottom: auto;
+  }
   .intro {
     margin-top: 7rem;
   }
@@ -263,6 +289,16 @@ footer .subscribe-content p {
   }
   .get-started {
     width: 20rem;
+  }
+  .privileges-grid .bottom-wave1 {
+    -webkit-transform: translateY(-45%);
+            transform: translateY(-45%);
+  }
+  .privileges-grid .top-wave1 {
+    top: -11rem;
+  }
+  .privileges-grid .bottom-wave2 {
+    bottom: -10rem;
   }
   .priv-description {
     margin-top: auto;
@@ -282,5 +318,17 @@ footer .subscribe-content p {
   .numbers .messages img,
   .numbers .communities img {
     width: 30px;
+  }
+  .privileges-grid .top-wave1 {
+    top: -7rem;
+  }
+  .privileges-grid .bottom-wave1 {
+    top: 34%;
+  }
+  .privileges-grid .top-wave2 {
+    top: 64%;
+  }
+  .privileges-grid .bottom-wave2 {
+    bottom: -6rem;
   }
 }/*# sourceMappingURL=style.css.map */
